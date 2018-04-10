@@ -1,8 +1,8 @@
-var Renderer = require('syntaxhighlighter-html-renderer');
-var XRegExp = require('syntaxhighlighter-regex');
-var applyRegexList = require('syntaxhighlighter-match');
+import Renderer from 'syntaxhighlighter-html-renderer';
+import { XRegExp } from 'syntaxhighlighter-regex';
+import { applyRegexList } from 'syntaxhighlighter-match';
 
-module.exports = class BrushBase {
+export default class BrushBase {
   /**
    * Converts space separated list of keywords into a regular expression string.
    * @param {String} str Space separated keywords.
